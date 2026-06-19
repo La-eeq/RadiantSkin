@@ -1,3 +1,14 @@
+/* Employee.java
+
+     Employee POJO class
+
+     Author: Samkelo Mahlangu (230064019)
+
+     Date: 19 June 2026 */
+
+
+
+
 package ac.za.mycput.domain;
 
 import java.math.BigDecimal;
