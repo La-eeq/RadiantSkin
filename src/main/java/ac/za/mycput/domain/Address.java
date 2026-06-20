@@ -1,13 +1,27 @@
 package ac.za.mycput.domain;
+import jakarta.persistence.*;
+/*
+* Name: Siphokazi Malingatshoni
+* Student Number: 222868708
+* Date:2026/06/21
+*/
 
+@Entity
 public class Address {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long addressId;
+
     private String street;
     private String city;
     private String province;
     private String postalCode;
     private String country ;
+
+    @ManyToOne
+    @JoinColumn(name = "customer_id")
+    private Customer customer;// link with customer class when available
 
     public Address() {
     }
