@@ -14,9 +14,11 @@ public class OrderItem {
     private BigDecimal unitPrice;
 
     @ManyToOne
+    @JoinColumn(name = "order_id")
     private Order order;
 
     @ManyToOne
+    @JoinColumn(name = "product_id")
     private Product product;
 
     protected OrderItem() {
@@ -50,9 +52,6 @@ public class OrderItem {
         return product;
     }
 
-    /**
-     * Convenience method: quantity * unitPrice for this line item.
-     */
     public BigDecimal getSubtotal() {
         if (unitPrice == null) {
             return BigDecimal.ZERO;
