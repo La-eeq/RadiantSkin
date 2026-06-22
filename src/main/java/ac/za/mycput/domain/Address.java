@@ -92,6 +92,7 @@ public class Address {
         public Builder setPostalCode(String postalCode){
             this.postalCode = postalCode;
             return this;
+
         }
         public Builder setCountry(String country){
             this.country = country;

@@ -23,7 +23,6 @@ public class Review {
     @JoinColumn(name = "product_id")
     private Product product;
 
-
     @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
@@ -58,7 +57,6 @@ public class Review {
     public Product getProduct() {
         return product;
     }
-
     public Customer getCustomer() {
         return customer;
     }
