@@ -1,3 +1,11 @@
+/* HairCareService.java
+
+     HairCareService POJO class
+
+     Author: Samkelo Mahlangu (230064019)
+
+     Date: 28 June 2026 */
+
 package ac.za.mycput.factory;
 
 import ac.za.mycput.domain.HairCareProduct;
